@@ -69,6 +69,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         status_code=422,
         content={"status": "error", "message": "Invalid request body"},
     )
+
 def classify_age(age: int) -> str:
     if age <= 12:
         return "child"
